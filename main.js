@@ -577,7 +577,7 @@ function display()
 			message(JSON.stringify(err) + ' SQL:' + sql);
 			return;
 		};
-		rows = map_rows(rows, {stage:{caijian:"裁剪", chefeng:"车缝", shuixi:"水洗", fengyan:"凤眼",dazao:"打枣",yapiao:"压朴",xiuxian:"修线"}});
+		rows = map_rows(rows, {stage:{caijian:"裁", chefeng:"车缝", shuixi:"水洗", fengyan:"凤眼",dazao:"打枣",yapiao:"压朴",xiuxian:"修线"}});
 
 		var thead = '<thead><tr>';
 		for (f in fields) {
