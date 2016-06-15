@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<title>写个系统给彪哥</title>
+	</head>
+	<body>
+
+		<div id="wrapper">
+			<div id="leftWrapper">
+				<div id="listView" class="list">
+					<li class="list-item-active"><a href="#" name="all">汇总</a></li>
+					<li><a href="#" name="caijian">裁剪</a></li>
+					<li><a href="#" name="yapiao">压朴</a></li>
+					<li><a href="#" name="chefeng">车缝</a></li>
+					<li><a href="#" name="dazao">打枣</a></li>
+					<li><a href="#" name="fengyan">凤眼</a></li>
+					<li><a href="#" name="shuixi">水洗</a></li>
+					<li><a href="#" name="xiuxian">修线</a></li>
+				</div>
+			</div>
+
+			<div id="rightWrapper">
+				<div id="header"><a id="fullPage" href="#">|||</a>
+
+						<label class="btn btn-default btn-file">
+							导入excel<input type="file" style="display: none;" id="inputFile">
+						</label>
+						<!--
+						<input type="file" value="选择文件" id="inputFile"/>
+						-->
+						<label class="btn btn-default btn-file">
+							生成excel<input type="button" id="export" style="display: none;"/>
+						</label>
+				</div>
+				<div id="contentWrapper">
+					<div class="table-head">
+						<div id="dialog">
+						</div>
+						<div id="search_bar">
+							<span>订单号<input type="text" name="order" id="order"/></span>
+							<span>月份<input type="text" name="month" id="month"/></span>
+							<span><input type="button" id="search" value="搜索" name="search"/></span>
+						</div>
+					</div>
+					<table class="table-fill" id="list">
+						<thead>
+							<tr>
+								<th class="text-left">订单</th>
+								<th class="text-left">月份</th>
+								<th class="text-left">单价</th>
+								<th class="text-left">数量</th>
+								<th class="text-left">完款与否</th>
+							</tr>
+						</thead>
+						<tbody class="table-hover">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script src="js/menu.js"></script>
+	</body>
+</html>

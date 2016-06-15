@@ -1,0 +1,16 @@
+{
+  "name": "nw-demo",
+  "version": "0.0.1",
+  "main": "index.html",
+  "devDependencies": {
+    "install": "^0.8.1",
+    "nw-builder": "^2.2.0"
+  },
+  "window": {
+    "frame": true,
+    "toolbar": true,
+    "icon": "icon.png",
+	"width": 900,
+	"height": 500
+  }
+}
